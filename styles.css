@@ -7,11 +7,18 @@ body {
     margin: 0;
 }
 
-.main-nav {
+.main-nav-home {
     background-color: #235c5c;
+}
+
+.main-nav-home #logo {
+    filter: invert(72%) sepia(89%) saturate(3715%) hue-rotate(322deg) brightness(94%) contrast(97%);
+}
+
+.main-nav {
     text-align: left;
     height: 100%;
-    width: 20%;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -22,13 +29,27 @@ body {
     justify-content:space-between;
 }
 
-.content {
-    padding-left: 20%;
+.main-nav-scrolled {
+    background-color: #cadbd7; 
+    
 }
 
-.logo img {
-    width: 150px;
-    height: 150px;
+.main-nav-scrolled li a {
+    color: #235c5c;
+}
+
+.main-nav-scrolled #logo {
+    filter: invert(23%) sepia(10%) saturate(5824%) hue-rotate(140deg) brightness(84%) contrast(81%);
+}
+
+
+.content {
+    padding-left: 250px;
+}
+
+#logo.logo {
+    width: 140px;
+    height: 140px;
 }
 
 ul {
@@ -47,12 +68,20 @@ a:hover {
 
 nav ul {
     width: 70px;
+    padding-top: 2em;
+    padding-left: 3em;
 }
+
 nav li a {
    color: #fff;
    display: inline-block;
    width: 70px;
    margin-bottom: 20px;
+}
+
+
+ul.social {
+    padding-left: 5em;
 }
 
 .social li a {
@@ -62,20 +91,24 @@ nav li a {
 section {
     position: relative;
     height: 100vh;
+    width: 90%;
     background-color: #DCE9E6;
-    padding: 20px 50px;
+    padding: 50px;
     display: inline-block;
     overflow: hidden;
 }
 
 section h1 {
     color: #ED6A5A;
+    font-size: 50px;
+    font-weight: 400;
 }
 
 section p{
     display: inline-block;
-    font-family:Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    width: 70%;
 }
 
 .tinted {
@@ -83,33 +116,6 @@ section p{
     top: 70px;
     right: -275px;
     width: 50%;
-    height: 70%;
-    border-radius: 50%;
-}
-
-.home-image {
-    background: linear-gradient(
-        rgba(22, 64, 64, .5),
-        rgba(22, 64, 64, .5)
-    ),
-    url('assets/klienstuck2.jpg');
-    background-size: 100% 100%;
-}
-
-.about-image {
-    background: linear-gradient(
-        rgba(22, 64, 64, .5),
-        rgba(22, 64, 64, .5)
-    ), 
-    url('assets/profilePic.jpg');
-    background-size: 100% 100%;
-}
-
-section img {
-    position: absolute;
-    top: 70px;
-    right: -275px;
-    width: 40%;
     height: 70%;
     border-radius: 50%;
     opacity: 0.5;
@@ -124,20 +130,68 @@ section:nth-child(1) h1{
 }
 
 #home span {
-    color: #ED6A5A;
+    color: #fff;
+}
+
+.projects-content,
+.about-content {
+    width: 60%;
+    min-height: 350px;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.projects-content li p,
+.about-content li p {
+    display: inline-block;
+    width: 250px;
+    height: 210px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.projects-content li img,
+.about-content li img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid #256B6B;
+    margin-left: 20px;
+}
+
+.tech-logos li img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #256B6B;
+    margin-left: 20px;
+}
+
+.tech-logos {
+    width: 50%;
+    min-height: 250px;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 50px;
 }
 
 footer {
-    margin: 0;
+    border-top: 1px solid #256B6B;
+    margin: 0 100px;
 }
 
-footer ul {
+footer ul  {
     display: flex;
     justify-content: center;
 }
 
-footer ul li h5{
-    margin-right: 10px;
+footer ul li h6{
+    margin-right: 15px;
 }
 
 @media  screen and (max-width: 420px){
