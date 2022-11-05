@@ -1,162 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tonia Gonzalez - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.svg"> 
-    <link href="https://use.typekit.net/cvo3dbp.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-lt-pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    <link href="https://use.typekit.net/cvo3dbp.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-lt-pro"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="main-nav main-nav-home" id="navBar">
-        <div class="menu">
-            <div class="menu-header">
-                <a href="#home"><img alt="logo" src="assets/tg_logo.svg" class="logo" id="logo"></a>
-                <button class="dropdown-menu" onclick="dropDownMenu()">
-                    <img alt="menu-bars" src="assets/menuBar.svg" id="menu-bar">
-                </button>
-            </div>
-            <ul class="menu-items-main">
-                <li><a href="#experience">experience</a></li>
-                <li class="under-construction"><a href="#projects" >projects</a></li>
-                <li><a href="#technologies">technologies</a></li>
-                <li><a href="#about">about</a></li>
-            </ul>     
-            <div id="menu-items-dropdown">
-                <ul class="menu-items">
-                    <li><a href="#experience">experience</a></li>
-                    <li class="under-construction"><a href="#projects">projects</a></li>
-                    <li><a href="#technologies">technologies</a></li>
-                    <li><a href="#about">about</a></li>
-                </ul>
-                <ul class="social-dropdown">
-                    <li><a href="https://github.com/toniagonzalez" target="_blank"><img alt="github logo" src="assets/githubMobile.svg"></a></li>
-                    <li><a href="https://www.linkedin.com/in/tonia-gonzalez-71404416a/" target="_blank"><img alt="linkedin logo" src="assets/linkedinMobile.svg"></a></li>
-                    <li><a href="https://twitter.com/encantoarboles" target="_blank"><img alt="twitter logo" src="assets/twitterMobile.svg"></a></li>
-                </ul>
-            </div>
+      <div class="menu">
+        <div class="menu-header">
+          <a href="#home"
+            ><img alt="logo" src="assets/tg_logo.svg" class="logo" id="logo"
+          /></a>
+          <button class="dropdown-menu" onclick="dropDownMenu()">
+            <img alt="menu-bars" src="assets/menuBar.svg" id="menu-bar" />
+          </button>
         </div>
-        <ul class="social-main">
-            <li><a href="https://github.com/toniagonzalez" target="_blank"><img alt="github logo" src="assets/github.svg"></a></li>
-            <li><a href="https://www.linkedin.com/in/tonia-gonzalez-71404416a/" target="_blank"><img alt="linkedin logo" src="assets/linkedin.svg"></a></li>
-            <li><a href="https://twitter.com/encantoarboles" target="_blank"><img alt="twitter logo" src="assets/twitter.svg"></a></li>
+        <ul class="menu-items-main">
+          <li><a href="#experience">experience</a></li>
+          <li class="under-construction"><a href="#projects">projects</a></li>
+          <li><a href="#technologies">technologies</a></li>
+          <li><a href="#about">about</a></li>
         </ul>
+        <div id="menu-items-dropdown">
+          <ul class="menu-items">
+            <li><a href="#experience">experience</a></li>
+            <li class="under-construction"><a href="#projects">projects</a></li>
+            <li><a href="#technologies">technologies</a></li>
+            <li><a href="#about">about</a></li>
+          </ul>
+          <ul class="social-dropdown">
+            <li>
+              <a href="https://github.com/toniagonzalez" target="_blank"
+                ><img alt="github logo" src="assets/githubMobile.svg"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/tonia-gonzalez-71404416a/"
+                target="_blank"
+                ><img alt="linkedin logo" src="assets/linkedinMobile.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="social-main">
+        <li>
+          <a href="https://github.com/toniagonzalez" target="_blank"
+            ><img alt="github logo" src="assets/github.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/tonia-gonzalez-71404416a/"
+            target="_blank"
+            ><img alt="linkedin logo" src="assets/linkedin.svg"
+          /></a>
+        </li>
+      </ul>
     </nav>
     <div class="content">
-        <main>
-            <section id="home">
-                <img class="tinted" alt="" src="assets/klienstuck.jpg">
-                <div class="section-content">
-                    <h1><span>hello!</span><br>my name is<br>tonia gonzalez</h1>
-                    <p>I am a Software Engineer based in Kalamazoo, Michigan. I'm passionate about architecting and building innovative user-informed features.  I have an insatiable curiosity that drives me to learn how things work. You’ll find me coding away in large scale observability systems and individual freelance development projects alike.</p>
-                </div>
-            </section>
-            <section id="experience">
-                <img class="tinted" alt="" src="assets/work_space.jpeg">
-                <div class="section-content">
-                    <h1>my work</h1>
-                    <h4>Software Engineer - New Relic</h4>
-                    <p>Internationalization of New Relic new user signup interface.</p>
-                    <p>Leveraged UX research to increase user utilization of the platform by building an onboarding checklist.</p>
-                    <p>Collaborated with product and design to create an observability maturity feature that gives users insights into alerting and asset management.</p>
-                    <h4>UI/UX Consultant  - Site Redesign - Poley Creative</h4>
-                    <p>Assessed initial site functionality  & researched tools for lead generation.</p>
-                    <p>Produced basic wireframe & full  prototype for a website redesign.</p>
-                    <h4>Web Developer (Freelance) - Custom CSS - NextUp</h4>
-                    <p>Provided branded layout for nonprofit - NextUp’s youth voter registration initiative to be used on  the “Rock the Vote” CMS</p>
-                    <h4>Certification - AWS Cloud Practitioner</h4>
-                    <h4><a href="assets/Gonzalez_Resume_2021.pdf" target="_blank" rel="noopener noreferrer" class="resume"> Go to resume </a></h4>
-                </div>
-            </section>
-            <section id="projects" class="under-construction">
-                <img class="tinted" alt="" src="assets/klienstuck.jpg">
-                <div class="section-content">
-                    <h1>projects I've<br>worked on:</h1>
-                    <ul class="projects-content">
-                        <li><img alt="project-image" src="assets/klienstuck2.jpg"></li>
-                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></li>
-                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></li>
-                        <li><img alt="tech-logo" src="assets/klienstuck2.jpg"></li>
-                    </ul>
-                </div>
-            </section>
-            <section id="technologies">
-                <img class="tinted" alt="" src="assets/code.jpeg">
-                <div class="section-content">
-                    <h1>tech<br>I work with:</h1>
-                    <ul class="tech-logos">
-                        <li><img alt="HTML" title="HTML - credit: b3nj5m1n pixabay" src="assets/html.png"></li>
-                        <li><img alt="CSS" title="CSS - credit: b3nj5m1n pixabay" src="assets/css.png"></li>
-                        <li><img alt="Typescript" title="Typescript" src="assets/typescript.png"></li>
-                        <li><img alt="React" title="React" src="assets/react.png"></li>
-                        <li><img alt="Node" title="Node"  src="assets/node.png"></li>
-                        <li><img alt="Java" title="Java"  src="assets/java.png"></li>
-                        <li><img alt="Kafka" title="Kafka"  src="assets/apache-kafka-wordmark.png"></li>
-                        <li><img alt="Terraform" title="Terraform" src="assets/terraform.png"></li>
-                        <li><img alt="Git" title="Git"  src="assets/git.png"></li> 
-                        <li><img alt="SQL" title="SQL"  src="assets/sql.png"></li>
-                        <li><img alt="GraphQL" title="GraphQL"  src="assets/graphql.png"></li>
-                        <li><img alt="AWS" title="AWS"  src="assets/aws-certified-cloud-practitioner.png"></li>      
-                    </ul>
-                </div>
-            </section>
-            <section id="about">
-                <img class="tinted" alt="" src="assets/trees.jpg">
-                <div class="section-content">
-                    <h1>a little more<br>about me:</h1>
-                    <ul class="about-content">
-                        <li><img alt="tech-logo" src="assets/collage.jpeg"></li>
-                        <li>
-                            <p>I have a bachelor's degree in Studio Art and a bachelor's degree in Arabic. While those two subjects may seem like the opposite ends of the communications spectrum I have found that software engineering has been a happy meeting in the middle between my analytical and creative interests.</p>
-                        </li>
-                        <li><img alt="tech-logo" src="assets/hiking.jpg"></li>
-                        <li>
-                            <p>When I am not coding I’ll most likely be doing one of the following: baking something up in the kitchen, going on a hike, bird watching, planting my garden, sketching, playing board games with my husband, meditating or looking up at the stars. </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+      <main>
+        <section id="home">
+          <img class="tinted" alt="" src="assets/klienstuck.jpg" />
+          <div class="section-content">
+            <h1><span>hello!</span><br />my name is<br />tonia gonzalez</h1>
+            <p>
+              I am a Software Engineer based in Kalamazoo, Michigan. I'm
+              passionate about architecting and building innovative
+              user-informed features. I have an insatiable curiosity that drives
+              me to learn how things work. You’ll find me coding away in large
+              scale observability systems and individual freelance development
+              projects alike.
+            </p>
+          </div>
+        </section>
+        <section id="experience">
+          <img class="tinted" alt="" src="assets/work_space.jpeg" />
+          <div class="section-content">
+            <h1>my work</h1>
+            <h4>Software Engineer - New Relic</h4>
+            <p>Internationalization of New Relic new user signup interface.</p>
+            <p>
+              Leveraged UX research to increase user utilization of the platform
+              by building an onboarding checklist.
+            </p>
+            <p>
+              Collaborated with product and design to create an observability
+              maturity feature that gives users insights into alerting and asset
+              management.
+            </p>
+            <h4>UI/UX Consultant - Site Redesign - Poley Creative</h4>
+            <p>
+              Assessed initial site functionality & researched tools for lead
+              generation.
+            </p>
+            <p>
+              Produced basic wireframe & full prototype for a website redesign.
+            </p>
+            <h4>Web Developer (Freelance) - Custom CSS - NextUp</h4>
+            <p>
+              Provided branded layout for nonprofit - NextUp’s youth voter
+              registration initiative to be used on the “Rock the Vote” CMS
+            </p>
+            <h4>Certification - AWS Cloud Practitioner</h4>
+            <h4>
+              <a
+                href="assets/Gonzalez_Resume_2021.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="resume"
+              >
+                Go to resume
+              </a>
+            </h4>
+          </div>
+        </section>
+        <section id="projects" class="under-construction">
+          <img class="tinted" alt="" src="assets/klienstuck.jpg" />
+          <div class="section-content">
+            <h1>projects I've<br />worked on:</h1>
+            <ul class="projects-content">
+              <li><img alt="project-image" src="assets/klienstuck2.jpg" /></li>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </li>
+              <li><img alt="tech-logo" src="assets/klienstuck2.jpg" /></li>
+            </ul>
+          </div>
+        </section>
+        <section id="technologies">
+          <img class="tinted" alt="" src="assets/code.jpeg" />
+          <div class="section-content">
+            <h1>tech<br />I work with:</h1>
+            <ul class="tech-logos">
+              <li>
+                <img
+                  alt="HTML"
+                  title="HTML - credit: b3nj5m1n pixabay"
+                  src="assets/html.png"
+                />
+              </li>
+              <li>
+                <img
+                  alt="CSS"
+                  title="CSS - credit: b3nj5m1n pixabay"
+                  src="assets/css.png"
+                />
+              </li>
+              <li>
+                <img
+                  alt="Typescript"
+                  title="Typescript"
+                  src="assets/typescript.png"
+                />
+              </li>
+              <li><img alt="React" title="React" src="assets/react.png" /></li>
+              <li><img alt="Node" title="Node" src="assets/node.png" /></li>
+              <li><img alt="Java" title="Java" src="assets/java.png" /></li>
+              <li>
+                <img
+                  alt="Kafka"
+                  title="Kafka"
+                  src="assets/apache-kafka-wordmark.png"
+                />
+              </li>
+              <li>
+                <img
+                  alt="Terraform"
+                  title="Terraform"
+                  src="assets/terraform.png"
+                />
+              </li>
+              <li><img alt="Git" title="Git" src="assets/git.png" /></li>
+              <li><img alt="SQL" title="SQL" src="assets/sql.png" /></li>
+              <li>
+                <img alt="GraphQL" title="GraphQL" src="assets/graphql.png" />
+              </li>
+              <li>
+                <img
+                  alt="AWS"
+                  title="AWS"
+                  src="assets/aws-certified-cloud-practitioner.png"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="about">
+          <img class="tinted" alt="" src="assets/trees.jpg" />
+          <div class="section-content">
+            <h1>a little more<br />about me:</h1>
+            <ul class="about-content">
+              <li><img alt="tech-logo" src="assets/collage.jpeg" /></li>
+              <li>
+                <p>
+                  I have a bachelor's degree in Studio Art and a bachelor's
+                  degree in Arabic. While those two subjects may seem like the
+                  opposite ends of the communications spectrum I have found that
+                  software engineering has been a happy meeting in the middle
+                  between my analytical and creative interests.
+                </p>
+              </li>
+              <li><img alt="tech-logo" src="assets/hiking.jpg" /></li>
+              <li>
+                <p>
+                  When I am not coding I’ll most likely be doing one of the
+                  following: baking something up in the kitchen, going on a
+                  hike, bird watching, planting my garden, sketching, playing
+                  board games with my husband, meditating or looking up at the
+                  stars.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
     </div>
     <footer class="footer">
-        <ul>
-            <li><h5><a href="https://www.meredithmaejones.com/" target="_blank" rel="noopener noreferrer">Designed by: Meredith Jones</a></h5></li>
-            <li><h5>Built by: Tonia Gonzalez</h5></li>
-            <li><h5>&copy <script>document.write(new Date().getFullYear())</script></h5></li>
-        </ul>     
+      <ul>
+        <li>
+          <h5>
+            <a
+              href="https://www.meredithmaejones.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Designed by: Meredith Jones</a
+            >
+          </h5>
+        </li>
+        <li><h5>Built by: Tonia Gonzalez</h5></li>
+        <li>
+          <h5>
+            &copy
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </h5>
+        </li>
+      </ul>
     </footer>
     <script>
-       const navBar = document.getElementById('navBar');
-       const logo = document.getElementById('logo');
-       window.onscroll = function () {
-           "use strict";
-           if (document.body.scrollTop >= 625 || document.documentElement.scrollTop >= 625) {
-               navBar.classList.add("main-nav-scrolled").remove("main-nav-home");
-           }
-           else {
-               navBar.classList.remove("main-nav-scrolled").add("main-nav-home");
-           }
-       }
+      const dropdown = document.getElementById("menu-items-dropdown");
+      // Add listener for menu click events
+      document.addEventListener(
+        "click",
+        function (e) {
+          if (!event.target.closest("#menu-items-dropdown")) return;
+          dropdown.style.display = "none";
+        },
+        false
+      );
 
-        const dropdown = document.getElementById("menu-items-dropdown"); 
-        // Add listener for menu click events
-        document.addEventListener('click', function (e) {
-            if (!event.target.closest('#menu-items-dropdown')) return;
-            dropdown.style.display = "none"
-        }, false)
-
-       function dropDownMenu(e) {              
-           if (dropdown.style.display === "block") {
-               dropdown.style.display = "none";
-           } else {
-            dropdown.style.display = "block"
-           }
-       }
-
+      function dropDownMenu(e) {
+        if (dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+        } else {
+          dropdown.style.display = "block";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
