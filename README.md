@@ -1,3 +1,3 @@
 # portfolio-redesign
 
-This is repo is the source code for my personal website:  [toniagonzalez.com](https://toniagonzalez.com/)
+This is repo was the source code for ane eariler versio of my personal website:  [toniagonzalez.com](https://toniagonzalez.com/)
